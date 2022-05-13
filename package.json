@@ -1,0 +1,19 @@
+{
+  "name": "charan-kumar-137",
+  "version": "1.0.0",
+  "description": "Personal Home Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charan-kumar-137/charan-kumar-137.git"
+  },
+  "author": "Charan Kumar N",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charan-kumar-137/charan-kumar-137/issues"
+  },
+  "homepage": "https://github.com/charan-kumar-137/charan-kumar-137#readme"
+}
