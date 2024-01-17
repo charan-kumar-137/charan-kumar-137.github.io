@@ -1,19 +1,59 @@
 {
-  "name": "charan-kumar-137",
-  "version": "1.0.0",
-  "description": "Personal Home Page",
-  "main": "index.js",
+  "name": "charan-kumar-137.github.io",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/charan-kumar-137/charan-kumar-137.git"
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2",
+    "core-js": "^3.35.0",
+    "jquery": "^3.7.1",
+    "js-beautify": "^1.14.11",
+    "npm-upgrade": "^3.1.0",
+    "popper.js": "^1.16.1",
+    "serve": "^14.2.1",
+    "vue": "^3.4.14",
+    "vue-clickaway": "^2.2.2",
+    "vue-i18n": "^9.9.0",
+    "vue-router": "^4.2.5",
+    "vue-tailwind": "^2.5.1"
   },
-  "author": "Charan Kumar N",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/charan-kumar-137/charan-kumar-137/issues"
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.23.3",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-plugin-router": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.20.1",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^14.0.0",
+    "vue-cli-plugin-i18n": "~2.3.2",
+    "vue-template-compiler": "^2.7.16"
   },
-  "homepage": "https://github.com/charan-kumar-137/charan-kumar-137#readme"
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
