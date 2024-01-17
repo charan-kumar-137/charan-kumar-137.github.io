@@ -1,0 +1,36 @@
+# This workflow will run npm build and then publish to gh-pages branch
+
+name: npm Deploy to GH Pages
+
+on:
+  push:
+    branches: 
+      - 'master'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install --legacy-peer-deps
+      - run: npm run build
+
+  publish-to-gh-pages:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+      - run: |
+          date > generated.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Generated Build for gh-pages on $(date)"
+          git push
