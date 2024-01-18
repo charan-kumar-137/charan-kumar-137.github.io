@@ -1,5 +1,5 @@
 <template>
-    <section class="projects_area p_120" id="proyectos">
+    <section class="projects_area" id="proyectos">
     </section>
 </template>
 
