@@ -16,8 +16,17 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm run
-      - uses: actions/checkout@v4
-          with:
-            ref: gh-pages
-      - run: a
+      - run: 
+          npm install --legacy-peer-deps
+          npm run build
+          git checkout -B gh-pages
+          mv dist/ .dist/
+          rm -rf *
+          cp -r .dist/* .
+          rm -r .dist/
+          date > generated.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Generated Build for gh-pages on $(date)"
+          git push
