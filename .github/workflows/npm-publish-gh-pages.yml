@@ -30,4 +30,4 @@ jobs:
           git config user.email github-actions@github.com
           git add .
           git commit -m "Generated Build for gh-pages on $(date)"
-          git push
+          git push --set-upstream origin gh-pages
