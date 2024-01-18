@@ -20,8 +20,9 @@ jobs:
       - run: |
           npm install --legacy-peer-deps
           npm run build
-          git checkout -B gh-pages
-          git fetch origin; git pull origin gh-pages
+          git fetch origin
+          git checkout  gh-pages
+          git pull origin gh-pages
           mv dist/ .dist/
           rm -rf *
           cp -r .dist/* .
