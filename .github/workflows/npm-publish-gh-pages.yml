@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: 
+      - run: |
           npm install --legacy-peer-deps
           npm run build
           git checkout -B gh-pages
