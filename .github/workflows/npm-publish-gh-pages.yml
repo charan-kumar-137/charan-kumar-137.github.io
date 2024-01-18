@@ -25,6 +25,7 @@ jobs:
           mv dist/ .dist/
           rm -rf *
           cp -r .dist/* .
+          rm -r .dist/
           date > generated.txt
           git config user.name github-actions
           git config user.email github-actions@github.com
