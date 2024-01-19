@@ -14,8 +14,8 @@
                                 <a class="social-web-banner-m" href="https://github.com/charan-kumar-137" target="_blank"><i class="fab fa-github social-web-banner"></i></a>
                                 <a class="social-web-banner-m" href="https://linkedin.com/in/--charan-kumar-n--" target="_blank"><i class="fab fa-linkedin social-web-banner"></i></a>
                                 <a class="email social-web-banner-m" href="mailto:charankumar1331@gmail.com" target="_blank"><i class="fas fa-envelope social-web-banner"></i></a>
+                                <a class="email social-web-banner-m" href="https://drive.google.com/file/d/1JFz_phUye8VJ6yOT0k11XwFL7I21z9EE/view?usp=drive_link" target="_blank"><i class="fa-solid fa-file social-web-banner"></i></a>
                             </h4>
-
                         </div>
                     </div>
                     <div class="col-lg-3">
